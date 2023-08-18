@@ -4,121 +4,289 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>DaSports</title>
+    <title>Gemilang Sports Events</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    <!-- Header Design -->
    <header class="header">
-        <a href="#" class="logo">DaSports.</a>
+        <img src="image/logo3.png" alt="" class="logo">
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#olahraga">Kategori</a>
-            <a href="#contact">Contact</a>
-            <a href="#">Login</a>
+            <a href="#about">Tentang</a>
+            <a href="#olahraga">Events</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Daftar</a>
+            <a href="#" id="showPopupBtn">Login</a>
         </nav>
-
-        <i class="fa fa-moon-o" id="darkMode-icon"></i>
    </header>
 
    <!-- Home Section Design -->
    <section class="home" id="home">
-    <div class="home-content">
-        <h3>Hai, Selamat Datang Di</h3>
-        <h1>Da<span>Sports.</span></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorem numquam cupiditate accusamus natus qui deleniti quae nostrum.</p>
-        <a href="#" class="btn">Daftar Sekarang</a>
-    </div>
-
-    <div class="kategori-container">
-        <div class="kategori-box">
-            <div class="kategori" style="--i:0">
-                <h3>Sepak Bola</h3>
+        <div class="slider-wrapper">
+            <div class="slider">
+                 <img id="slide-1" src="image/gambarslide.png" alt="">
+                 <img id="slide-2" src="image/gambarslide2.png" alt="">
+                 <img id="slide-3" src="image/gambarslide3.png" alt="">
             </div>
-            <div class="kategori" style="--i:1">
-                <h3>Badminton</h3>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
             </div>
-            <div class="kategori" style="--i:2">
-                <h3>Volly</h3>
-            </div>
-
-            <div class="circle"></div>
         </div>
-
-        <div class="overlay"></div>
-
-        <div class="home-img">
-            <img src="image/logo2.png" alt="">
-        </div>
-    </div>
+        <div class="overlay">
+            <img src="image/logo4.png" alt="">
+            <h1>Selamat Datang di <span> Gemilang Sports Events</span></h1>
+            <p>Temukan semangat kompetisi dan kebugaran bersama kami!</p>
+            <a href="#contact" class="btn">Daftar Sekarang</a>
+          </div>
    </section>
 
    <!-- about section -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="image/Frame2.png" alt="">
+            <img src="image/logo.png" alt="">
         </div>
 
         <div class="about-content">
-            <h2 class="heading">About <span>DaSports.</span></h2>
-            <h3>Lorem ipsum dolor sit amet.</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla sint, magnam minus quaerat ut sed, est consectetur laudantium, cumque animi numquam? Rerum repudiandae vel eius accusamus quas natus similique nostrum iusto adipisci sunt consectetur, illum eveniet quo asperiores ab nihil?</p>
-            <a href="#" class="btn">Pelajari Lebih Lanjut</a>
+            <h2 class="heading">Tentang <span>Gemilang Sports Events</span></h2>
+            <h3>Apa itu Gemilang Sports Events?</h3>
+            <p>Gemilang Sports Events adalah platform berbasis web yang dirancang khusus untuk penyelenggaraan berbagai jenis lomba dan event olahraga. Platform ini menghubungkan penyelenggara, peserta, dan penggemar untuk berpartisipasi dalam kompetisi olahraga yang beragam. Tujuannya adalah untuk memberikan pengalaman interaktif dan terhubung bagi semua pihak yang terlibat dalam event olahraga.</p>
+            <a href="#" class="btn">Baca Selengkapnya</a>
         </div>
     </section>
 
     <section class="olahraga" id="olahraga">
-        <h2 class="heading">Kategori <span>Olahraga</span></h2>
+        <h2 class="heading">- Kategori <span>Events</span> -</h2>
 
         <div class="olahraga-container">
             <div class="olahraga-box">                
                 <h3>Sepak Bola</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, doloremque ipsam ad minus ratione beatae atque quam explicabo, vitae quo reprehenderit impedit!.</p>
-                <a href="#" class="btn">Pelajari Lebih Lanjut</a>
+                <p>Sepak bola adalah salah satu jenis olahraga yang dapat diadakan melalui Gemilang Sports Events. Platform ini memungkinkan penyelenggara mengadakan turnamen sepak bola dengan berbagai tim. Peserta dapat mendaftar secara online, mendapatkan informasi jadwal dan hasil, serta berinteraksi dengan sesama peserta dan penggemar melalui platform ini.</p>
+                <a href="#" class="btn">syarat dan ketentuan</a>
+                <a href="#" class="btn" id="jadwalsepakbola">Jadwal</a>
             </div>
             <div class="olahraga-box">                
                 <h3>Badminton</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, doloremque ipsam ad minus ratione beatae atque quam explicabo, vitae quo reprehenderit impedit!.</p>
-                <a href="#" class="btn">Pelajari Lebih Lanjut</a>
+                <p>Badminton juga dapat diadakan dalam Gemilang Sports Events. Platform ini cocok untuk turnamen badminton, baik tunggal maupun ganda. Peserta dapat mendaftar dengan mudah, mengakses informasi jadwal dan hasil, serta berinteraksi dengan peserta dan penggemar lainnya.</p>
+                <a href="#" class="btn">syarat dan ketentuan</a>
+                <a href="#" class="btn" id="jadwalbadminton">Jadwal</a>
             </div>
             <div class="olahraga-box">                
                 <h3>Volly</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, doloremque ipsam ad minus ratione beatae atque quam explicabo, vitae quo reprehenderit impedit!.</p>
-                <a href="#" class="btn">Pelajari Lebih Lanjut</a>
+                <p>Bola voli adalah olahraga tim yang dapat diintegrasikan ke dalam Gemilang Sports Events. Turnamen bola voli, termasuk pantai, dapat diadakan melalui platform ini. Peserta dapat mendaftar, memantau jadwal, dan berkomunikasi dengan sesama peserta serta penggemar untuk diskusi strategi dan hasil pertandingan.</p>
+                <a href="#" class="btn">syarat dan ketentuan</a>
+                <a href="#" class="btn" id="jadwalvolly">Jadwal</a>
             </div>
         </div>
     </section>
 
+    <section class="gallery" id="gallery">
+        <h2 class="heading">- Gallery <span>Events</span> -</h2>
+        <div class="swipper-container">
+            <div class="swipper">
+              <div class="swipper-item" data-index="0"><video controls><source src="video/video.mp4" type="video/mp4"></video></div>
+              <div class="swipper-item" data-index="1"><video controls><source src="video/video2.mp4" type="video/mp4"></video></div>
+              <div class="swipper-item" data-index="2"><video controls><source src="video/video3.mp4" type="video/mp4"></video></div>
+            </div>
+            <button class="prev-button btn"> Sebelumnya </button>
+            <button class="next-button btn"> Selanjutnya </button>
+          </div>
+    </section>
+
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Us!</span></h2>
+        <h2 class="heading">- Form <span>Pendaftaran</span> -</h2>
 
         <form action="#">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" placeholder="Username" required="Mohon isi form ini terlebih dahulu">
+                <input type="email" placeholder="Email Address" required="Mohon isi form ini terlebih dahulu">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="email" placeholder="Email Subject">
+                <input type="number" placeholder="Mobile Number" required="Mohon isi form ini terlebih dahulu">
+                <input type="password" placeholder="Password" required="Mohon isi form ini terlebih dahulu">
             </div>
             <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <input type="submit" value="Daftar Sekarang" class="btn">
         </form>
     </section>
 
     <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; 2023 by DaSports | All Right Reserved.</p>
+            <p>Copyright &copy; 2023 by Gemilang Sports Events | All Right Reserved.</p>
         </div>
         
         <div class="footer-iconTop">
-            <a href="#home"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+            <a href="#home">Home</a>
         </div>
     </footer>
 
-   <script src="js/style.js"></script>
+    <div id="loginPopup" class="popup">
+        <div class="popup-content">
+          <span class="close" id="closePopupBtn">&times;</span>
+          <h2>Login</h2>
+          <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" class="btn">Login</button>
+          </form>
+        </div>
+    </div>
+
+    <div id="jadwalsepakbolapopup" class="popup">
+      <div class="popup-content">
+        <span class="close" id="closepopupjadwalsepakbola">&times;</span>
+        <h2>- Jadwal <span>Sepak Bola</span> -</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">15-10-2023</div>
+            <div class="timeline-content">
+              <h3>Pendaftaran</h3>
+              <p>Para tim peserta diharuskan untuk mendaftar terlebih dahulu di forum Pendaftaran dengan username nama tim.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">20-10-2023</div>
+            <div class="timeline-content">
+              <h3>Semi final</h3>
+              <p>akan dipilih top 10 tim yang berhasil lolos ke babak semi final dan akan melanjutkan ke babak grand final.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+              <div class="timeline-date">30-10-2023</div>
+              <div class="timeline-content">
+                <h3>Grand Final</h3>
+                <p>akan dipilih top 4 tim yang lolos ke grand final dan akan melanjutkan ke Final</p>
+              </div>
+          </div>
+          <div class="timeline-item">
+              <div class="timeline-date">31-10-2023</div>
+              <div class="timeline-content">
+                <h3>Final</h3>
+                <p>akan dipilih top 2 tim yang lolos ke final dan memperebutkan kemenngan</p>
+              </div>
+          </div>
+          <div class="timeline-item">
+              <div class="timeline-date">1-11-2023</div>
+              <div class="timeline-content">
+                <h3>Pengumuman Pemenang</h3>
+                <p>akan diumumkan juara 1, 2, 3 pada tim yang menang</p>
+              </div>
+          </div>
+          <div class="timeline-item">
+              <div class="timeline-date">2-11-2023</div>
+              <div class="timeline-content">
+                <h3>Pemberian Hadiah</h3>
+                <p>pemberian hadiah kepada para tim pemenang</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <div id="jadwalbadmintonpopup" class="popup">
+        <div class="popup-content">
+          <span class="close" id="closepopupjadwalbadminton">&times;</span>
+          <h2>- Jadwal <span>Badminton</span> -</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">15-10-2023</div>
+              <div class="timeline-content">
+                <h3>Pendaftaran</h3>
+                <p>Para peserta tunggal maupun ganda diharuskan untuk mendaftar terlebih dahulu di forum Pendaftaran dengan username nama tim.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">20-10-2023</div>
+              <div class="timeline-content">
+                <h3>Semi final</h3>
+                <p>akan dipilih top 10 peserta tunggal atau ganda yang berhasil lolos ke babak semi final dan akan melanjutkan ke babak grand final.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">30-10-2023</div>
+                <div class="timeline-content">
+                  <h3>Grand Final</h3>
+                  <p>akan dipilih top 4 peserta tunggal atau ganda yang lolos ke grand final dan akan melanjutkan ke Final</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">31-10-2023</div>
+                <div class="timeline-content">
+                  <h3>Final</h3>
+                  <p>akan dipilih top 2 peserta tunggal atau ganda yang lolos ke final dan memperebutkan kemenngan</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">1-11-2023</div>
+                <div class="timeline-content">
+                  <h3>Pengumuman Pemenang</h3>
+                  <p>akan diumumkan juara 1, 2, 3 pada peserta tunggal atau ganda yang menang</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2-11-2023</div>
+                <div class="timeline-content">
+                  <h3>Pemberian Hadiah</h3>
+                  <p>pemberian hadiah kepada para peserta tunggal atau ganda pemenang</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="jadwalvollypopup" class="popup">
+      <div class="popup-content">
+        <span class="close" id="closepopupjadwalvolly">&times;</span>
+        <h2>- Jadwal <span>Volly</span> -</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">15-10-2023</div>
+            <div class="timeline-content">
+              <h3>Pendaftaran</h3>
+              <p>Para tim peserta diharuskan untuk mendaftar terlebih dahulu di forum Pendaftaran dengan username nama tim.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">20-10-2023</div>
+            <div class="timeline-content">
+              <h3>Semi final</h3>
+              <p>akan dipilih top 10 tim yang berhasil lolos ke babak semi final dan akan melanjutkan ke babak grand final.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+              <div class="timeline-date">30-10-2023</div>
+              <div class="timeline-content">
+                <h3>Grand Final</h3>
+                <p>akan dipilih top 4 tim yang lolos ke grand final dan akan melanjutkan ke Final</p>
+              </div>
+          </div>
+          <div class="timeline-item">
+              <div class="timeline-date">31-10-2023</div>
+              <div class="timeline-content">
+                <h3>Final</h3>
+                <p>akan dipilih top 2 tim yang lolos ke final dan memperebutkan kemenngan</p>
+              </div>
+          </div>
+          <div class="timeline-item">
+              <div class="timeline-date">1-11-2023</div>
+              <div class="timeline-content">
+                <h3>Pengumuman Pemenang</h3>
+                <p>akan diumumkan juara 1, 2, 3 pada tim yang menang</p>
+              </div>
+          </div>
+          <div class="timeline-item">
+              <div class="timeline-date">2-11-2023</div>
+              <div class="timeline-content">
+                <h3>Pemberian Hadiah</h3>
+                <p>pemberian hadiah kepada para tim pemenang</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+   <script src="js/script.js"></script>
 </body>
 </html>
